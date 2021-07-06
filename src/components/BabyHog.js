@@ -4,6 +4,12 @@ import SunBaby from "../assets/sun-eyes.png";
 import BlueBaby from "../assets/blue-eyes.png";
 import GlowingBaby from "../assets/glowing-eyes.png";
 
+
+const eyeColorChange = {
+  blue : BlueBaby,
+  sun : SunBaby,
+  glowing : GlowingBaby
+}
 // is there a way we could associate eye color string values with images?
 // perhaps so we could do something along the lines of `eyeColorMapper['blue'] and get back the right image?`
 
@@ -31,8 +37,8 @@ function BabyHog({name, hobby, eyeColor}) {
 
       <div className="hb-wrap">
         <img
-          src={normalBaby}
-          style={{ height: "200px" }}
+          src={eyeColorChange[eyeColor]}
+          style={{ height: `${weight}px` }}
           alt="MasterBlasterJrJr"
         />
       </div>

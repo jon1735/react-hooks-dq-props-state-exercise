@@ -3,6 +3,8 @@ import Master from "../assets/master-hog.png";
 import BabyHog from "./BabyHog";
 import offspring from "../data.js"
 
+
+
 function MasterHog() {
   const [eyeColor, setEyeColor] = useState("blue");
 
